@@ -120,7 +120,7 @@ footer {
 }
 
 .input-section input {
-    margin-right: calc(6vh + 66px);
+    margin-right: calc(6vh + 6px);
     border-radius: 6px;
     padding: 6px;
 }
