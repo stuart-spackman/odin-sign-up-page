@@ -13,7 +13,6 @@
 body {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 3vh;
-    line-height: ;
 
     display: flex;
     flex-direction: column;
@@ -152,4 +151,97 @@ footer {
 .button-section a {
     color: darkgreen;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 666px) {
+    body {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .image-side {
+        background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+        background-repeat: no-repeat;
+        background-size: var(--width) auto;
+
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-side {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-section {
+        padding: 11vh 11vh 0 11vh;
+        background-color: #F6F6F6;
+        height: 33vh;
+    }
+
+    .input-section {
+        padding: var(--padding);
+        box-shadow: 0px 6px 6px #888, 0px -6px 6px #888;
+
+    }
+
+    .input-section li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-section label {
+        margin-top: 3vh;
+        font-size: 13px;
+        font-weight: 600;
+        color: grey;
+    }
+
+    .input-section input {
+        margin-right: calc(6vh + 6px);
+        border-radius: 6px;
+        padding: 6px;
+        width: 13vw;
+    }
+
+    .button-section {
+        padding: var(--padding);
+    }
+
+    .button-section button {
+        margin-top: 3vh;
+
+        font-weight: bold;
+        font-size: 3vh;
+
+        padding: 3vh 33px;
+        color: white;
+        background-color: darkgreen;
+
+        border: none;
+        border-radius: 1vh;
+        cursor: pointer;
+    }
+
+    .button-section p {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 2vh;
+    }
+
+    .button-section a {
+        color: darkgreen;
+        text-decoration: none;
+    }
+
 }
