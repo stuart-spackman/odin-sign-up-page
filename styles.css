@@ -1,0 +1,155 @@
+:root {
+    --width: 100%;
+    --height: 77vh;
+    --padding: calc(6px + 3vh);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 3vh;
+    line-height: ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.image-side {
+    background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+    background-repeat: no-repeat;
+    background-size: var(--width) auto;
+
+
+    width: var(--width);
+    height: var(--height);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    height: 22vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 11vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo-contents {
+    display: flex;
+}
+
+.logo-contents img {
+    height: 19vh;
+    width: auto;
+
+    margin: auto 0;
+}
+
+.logo-contents h1 {
+    color: white;
+    margin: auto 0 0 0;
+    font-family: 'Norse Bold';
+
+    font-size: calc(66px + 6vh);
+
+}
+
+a {
+    color: white;
+}
+
+footer {
+    color: white;
+    font-size: calc(6px + 1.6vh);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 1vh;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+.form-side {
+    width: var(--width);
+    height: var(--height);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header-section {
+    padding: var(--padding);
+    background-color: #F6F6F6;
+
+    flex: 1;
+}
+
+.input-section {
+    padding: var(--padding);
+    box-shadow: 0px 6px 6px #888, 0px -6px 6px #888;
+
+}
+
+.input-section li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section label {
+    margin-top: 3vh;
+    font-size: 13px;
+    font-weight: 600;
+    color: grey;
+}
+
+.input-section input {
+    margin-right: calc(6vh + 66px);
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.button-section {
+    padding: var(--padding);
+}
+
+.button-section button {
+    margin-top: 3vh;
+
+    font-weight: bold;
+    font-size: 3vh;
+
+    padding: 3vh 33px;
+    color: white;
+    background-color: darkgreen;
+
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.button-section p {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.button-section a {
+    color: darkgreen;
+    text-decoration: none;
+}
