@@ -58,11 +58,12 @@
                     <div class="list-row">
                         <li>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required>
                         </li>
-                        <li>
+                        <li id="password-confirmation">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
+                            <input type="password" id="confirm-password" name="confirm-password" required">
+                            <span id="password-check" aria-live="polite"></span>
                         </li>
                     </div>
                 </ul>

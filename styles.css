@@ -245,3 +245,27 @@ footer {
     }
 
 }
+
+.resolved {
+    padding: 6px;
+    margin-right: calc(6vh + 6px);
+
+    font-size: 66%;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+.rejected {
+    padding: 6px;
+    margin-right: calc(6vh + 6px);
+
+    font-size: 66%;
+    color: white;
+    background-color: darkred;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
